@@ -1,0 +1,30 @@
+{
+    "type": "datasource",
+    "name": "Emma datasource",
+    "id": "emma-datasource",
+    "defaultMatchFormat": "regex values",
+    "metrics": true,
+    "annotations": true,
+    "alerting": false,
+    "queryOptions": {
+        "minInterval": true
+    },
+    "info": {
+        "description": "Grafana datasource for Emma",
+        "author": {
+            "name": "Martin Hlavacek",
+            "url": "https://datera.cz"
+        },
+        "keywords": [
+            "Emma datasource"
+        ],
+        "links": [],
+        "screenshots": [],
+        "version": "0.1.0",
+        "updated": "2019-04-15"
+    },
+    "dependencies": {
+        "grafanaVersion": "6.0.x",
+        "plugins": []
+    }
+}

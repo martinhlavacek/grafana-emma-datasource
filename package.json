@@ -1,0 +1,82 @@
+{
+  "name": "grafana-emma-datasource",
+  "version": "1.0.0",
+  "description": "reactjs grafana datasource for emma app",
+  "main": "index.js",
+  "scripts": {
+    "build": "node --max-old-space-size=8192 ./node_modules/.bin/webpack --config webpack.config.prod.js",
+    "dev": "webpack --mode development",
+    "watch": "webpack --mode development --watch",
+    "test": "jest --config jest.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinhlavacek/grafana-emma-datasource.git"
+  },
+  "keywords": [
+    "grafana",
+    "reactjs"
+  ],
+  "author": "Martin Hlavacek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/martinhlavacek/grafana-emma-datasource/issues"
+  },
+  "homepage": "https://github.com/martinhlavacek/grafana-emma-datasource#readme",
+  "lint-staged": {
+    "*.{js,ts,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "useTabs": false,
+    "printWidth": 90,
+    "bracketSpacing": false,
+    "semi": true
+  },
+  "dependencies": {
+    "@grafana/ui": "^6.0.1-alpha.0",
+    "immutable": "^3.8.2",
+    "lodash": "^4.17.4",
+    "moment": "^2.22.1",
+    "papaparse": "4.6.3",
+    "prismjs": "^1.6.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-select": "^2.4.2",
+    "slate": "^0.33.7",
+    "slate-plain-serializer": "^0.5.13",
+    "slate-react": "^0.12.4"
+  },
+  "devDependencies": {
+    "@types/grafana": "github:CorpGlory/types-grafana.git",
+    "@types/jest": "^22.2.3",
+    "@types/lodash": "^4.14.74",
+    "@types/papaparse": "^4.5.7",
+    "@types/react": "^16.6.3",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "2.1.0",
+    "grafana-sdk-mocks": "github:grafana/grafana-sdk-mocks",
+    "husky": "^1.0.0-rc.13",
+    "jest": "23.6.0",
+    "lint-staged": "^7.2.0",
+    "ng-annotate-webpack-plugin": "^0.3.0",
+    "prettier": "1.10.2",
+    "release-it": "^10.0.3",
+    "replace-in-file-webpack-plugin": "^1.0.6",
+    "style-loader": "^0.21.0",
+    "ts-jest": "23.10.5",
+    "ts-loader": "^4.3.0",
+    "typescript": "^2.8.3",
+    "webpack": "4.28.4",
+    "webpack-cli": "3.2.1"
+  },
+  "resolutions": {
+    "jest/jest-cli/jest-haste-map/sane/fsevents": "1.2.4",
+    "webpack/watchpack/chokidar/fsevents": "1.2.4"
+  }
+}
